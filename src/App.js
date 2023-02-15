@@ -72,7 +72,18 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        display: "grid",
+        gridAutoColumns: "",
+        gap: "5vh",
+        justifyContent: "center",
+        margin: "auto",
+        marginTop: "5vh",
+        marginLeft: "5vw",
+        marginRight: "5vw"
+      }}
+    >
       <form onSubmit={handleSubmit}>
         <p>{JSON.stringify(form)}</p>
         <span>Username</span>
